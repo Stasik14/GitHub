@@ -13,14 +13,14 @@ int main()
 
 	int max = 0;
 
-	if (a > b && a > c && a > d) 
+	if (a > b) 
 	{
 		max = a;
 	}
 	
 	else 
 	{
-		max = и;
+		max = b;
 	}
 
 	cout << max;
