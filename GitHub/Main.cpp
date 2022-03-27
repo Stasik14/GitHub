@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-	int a, b, c;
+	int a, b, c, d;
 	cout << "Input number a: ";
 	cin >> a;
 
@@ -13,16 +13,21 @@ int main() {
 	cout << "Input number c: ";
 	cin >> c;
 
-	int max = c;
+	cout << "Input number d: ";
+	cin >> d;
 
-	if (a > b && a > c) {
+
+	int max = 0;
+
+	if (a > b && a > c && a > d) {
 		max = a;
-	}else if(b > a && b > c) {
+	}else if(b > a && b > c && b > d) {
 		max = b;
-	}
-
-	else {
+	}else if (c > a && c > b && c > d) {
 		max = c;
+	}
+	else {
+		max = d;
 	}
 
 	cout << max;
